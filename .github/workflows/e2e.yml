@@ -1,0 +1,11 @@
+name: e2e
+on: workflow_dispatch
+jobs:
+  quick:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "mcpgw-e2e quick job"
+  slow:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 300
